@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GITHUB</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* General Styles */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        .bg-light-blue {
+            background-color: #21212c; /* Dark blue background color for navbar */
+        }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white; /* White text color for navbar brand */
+            font-weight: bold;
+        }
+        .navbar-brand svg {
+            margin-right: 8px; /* Space between the icon and text */
+        }
+        .search-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-left: 20px; /* Space between the box and search results */
+        }
+        .search-bar-container {
+            margin-top: 40px; /* Space from the navbar */
+            display: flex;
+            justify-content: center; /* Center the search bar */
+            align-items: center;
+            padding: 0 100px;
+        }
+        .box {
+            width: 20vmax;
+            height: 30vmax;
+            background-color: rgb(53, 52, 53); /* Box background color */
+            border-radius: 30px; /* Rounded corners */
+        }
+        .result-box {
+            width: 15vmax;
+            height: 10vmax;
+            background-color: rgb(53, 52, 53); /* Result box background color */
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+            flex-direction: row;
+            border-radius: 30px; /* Rounded corners */
+        }
+        .result-box1 {
+            width: 50vmax;
+            height: 10vmax;
+            background-color: rgb(53, 52, 53); /* Result box background color */
+            margin: 20px;
+            border-radius: 30px; /* Rounded corners */
+        }
+        .results-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px;
+        }
+        .root {
+            background-color: rgb(121, 119, 119);
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .search-form {
+            display: flex;
+            justify-content: center; /* Center the form */
+            width: 100%;
+        }
+        .search-input {
+            width: 60%; /* Adjust the width as needed */
+            background-color: rgb(53, 52, 53); /* Background color */
+            color: white; /* Text color */
+            border: 1px solid rgb(53, 52, 53); /* Border color */
+            border-radius: .375rem; /* Border radius */
+        }
+    </style>
+</head>
+<body>
+    <div class="root">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-light-blue">
+            <div class="container-fluid">
+                <!-- GitHub Icon -->
+                <svg height="35" aria-hidden="true" viewBox="0 0 16 16" width="35" style="background-color: white; border-radius: 21px; padding:0px;">
+                    <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
+                </svg>
+                <!-- Navbar Brand -->
+                <div class="container-fluid d-flex justify-content-center">
+                    <a class="navbar-brand" href="#">
+                        GITHUB
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- Search Bar and Results -->
+        <div class="search-bar-container">
+            <div class="box"></div>
+            <div class="search-container">
+                <!-- Search Form -->
+                <form class="search-form mb-3">
+                    <input class="form-control search-input me-2" type="text" placeholder="Search" aria-label="Search">
+                </form>
+                <!-- Search Results -->
+                <div class="results-container">
+                    <div class="result-box"></div>
+                    <div class="result-box"></div>
+                    <div class="result-box"></div>
+                </div>
+                <div class="result-box1"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
